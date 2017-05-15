@@ -36,6 +36,7 @@ int main(){
 
 	//(3)
 	int q;//the number of querys
+	scanf("%d",&q);
 	while(q--){
 		int x;
 		scanf("%d",&x);
