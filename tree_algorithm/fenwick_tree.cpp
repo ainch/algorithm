@@ -44,7 +44,7 @@ int main(){
 		scanf("%d%d",&s,&e);
 		
 		int ans = ft.sum(e) - ft.sum(s-1);
-		printf("%d",ans);
+		printf("%d\n",ans);
 	}
 	return 0;
 }
