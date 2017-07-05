@@ -25,7 +25,7 @@ int ccw(ll a, ll b, ll c){
 
 ll left;
 bool comp(const ll &a,const ll &b){
-	return ccw(left,a,b)>0;
+	return ccw(left,a,b) > 0;
 }
 
 vector < ll > make_convex_hull(vector < ll > &a){
@@ -36,7 +36,7 @@ vector < ll > make_convex_hull(vector < ll > &a){
 
 	vector < ll > ret;
 	for(int i=0;i<a.size();++i){
-		while(ret.size()>=2 && ccw(ret[ret.size()-2],ret[ret.size()-1],a[i]))
+		while(ret.size()>=2 && ccw(ret[ret.size()-2],ret[ret.size()-1],a[i]) <= 0)
 				ret.pop_back();
 		ret.push_back(a[i]);
 	}
