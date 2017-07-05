@@ -38,6 +38,7 @@ vector < ll > make_convex_hull(vector < ll > &a){
 	for(int i=0;i<a.size();++i){
 		while(ret.size()>=2 && ccw(ret[ret.size()-2],ret[ret.size()-1],a[i]))
 				ret.pop_back();
+		ret.push_back(a[i]);
 	}
 	return ret;
 }
