@@ -30,7 +30,7 @@ bool comp(const ll &a,const ll &b){
 
 vector < ll > make_convex_hull(vector < ll > &a){
 	sort(a.begin(),a.end());
-	ll left = a[0];
+	left = a[0];
 	
 	stable_sort(a.begin() + 1,a.end(),comp);
 
