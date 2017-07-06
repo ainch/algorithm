@@ -2,7 +2,7 @@
 //
 //	writer : Yunyoung Choi
 //	handle : ainch ( codeforce, github ), pinch3773 ( acmicpc.net ) 
-//	compiler option : g++-4.8 -std==++11 
+//	compiler option : g++-4.8 -std==c++11 
 //	company : sogang university
 //
 //=========================================================================================
