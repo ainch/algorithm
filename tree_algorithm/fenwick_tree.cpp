@@ -5,26 +5,26 @@ using namespace std;
 
 template < typename T > 
 class Fenwick{
-		private:
-				vector < T > tree;
-		public:
-				Fenwick(int size){
-					tree.resize(size+1);
-				}
-				T sum(int p){
-					T ret = T(0);
-					while(p){
-						ret += tree[p];
-						p -= (-p&p);
-					}
-					return ret;
-				}
-				void update(int p, T v){
-					while(p<tree.size()){
-						tree[p] += v;
-						p += (-p&p);
-					}
-				}
+private:
+		vector < T > tree;
+public:
+		Fenwick(int size){
+			tree.resize(size+1);
+		}
+		T sum(int p){
+			T ret = T(0);
+			while(p){
+				ret += tree[p];
+				p -= (-p&p);
+			}
+			return ret;
+		}
+		void update(int p, T v){
+			while(p<tree.size()){
+				tree[p] += v;
+				p += (-p&p);
+			}
+		}
 };
 
 int main(){
